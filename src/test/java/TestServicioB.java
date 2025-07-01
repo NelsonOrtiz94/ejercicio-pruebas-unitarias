@@ -26,6 +26,7 @@ public class TestServicioB {
         Assert.assertEquals(servicioB.multiplicarSumar(2,3,2),10);
     }
 
+    //Se utiliza Mockito para simular el comportamiento del ServicioA y aislarnos de su implementación real.
     @Test
     public void testMultiplicarSumarMockito(){
         ServicioA servicioA = Mockito.mock(ServicioA.class);
